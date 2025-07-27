@@ -181,14 +181,11 @@ async def process_rss_source(source, health_check_enabled, health_config, health
                     published_datetime = datetime.fromtimestamp(calendar.timegm(entry.published_parsed), timezone.utc)
                     published_date = published_datetime.date()
                 except Exception as e:
-                    logging.warning(f"解析日期失败: {str(e)}, 条目: {entry.get('title', '未知标题')}")
-                    # 即使日期解析失败也保留新闻，使用当前时间
-                    published_datetime = datetime.now(timezone.utc)
-                    published_date = published_datetime.date()
+                    logging.warning(f"解析日期失败: {str(e)}, 条目: {entry.get('title', '未知标题')}，已跳过")
+                    continue
             else:
-                # 没有发布日期的条目也保留，使用当前时间
-                published_datetime = datetime.now(timezone.utc)
-                published_date = published_datetime.date()
+                logging.warning(f"缺少发布日期，条目: {entry.get('title', '未知标题')}，已跳过")
+                continue
 
             # 只保留最近7天的新闻
             if published_datetime < seven_days_ago:

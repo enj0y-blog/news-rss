@@ -13,7 +13,7 @@
   },
   "http://www.ithome.com/rss/": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
@@ -85,7 +85,7 @@
   },
   "https://hellogithub.com/rss": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
@@ -151,7 +151,7 @@
   },
   "https://rsshub.app/pubmed/trending": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
@@ -163,7 +163,7 @@
   },
   "http://www.199it.com/feed": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
@@ -187,7 +187,7 @@
   },
   "http://feedmaker.kindle4rss.com/feeds/guancha.xml": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
@@ -199,7 +199,7 @@
   },
   "http://www.huxiu.com/rss/0.xml": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
@@ -223,31 +223,31 @@
   },
   "https://36kr.com/feed": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "https://feeds.appinn.com/appinns/": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "https://techcrunch.com/feed/": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "https://feed.iplaysoft.com/": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "https://www.solidot.org/index.rss": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
@@ -276,14 +276,14 @@
     "last_disabled_time": "2025-07-27T15:05:46.903251"
   },
   "http://www.iresearch.cn/common/rss/index.xml": {
-    "failures": 2,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
-    "disabled": false,
-    "last_disabled_time": null
+    "failures": 3,
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
+    "disabled": true,
+    "last_disabled_time": "2025-07-27T14:23:14.039907+00:00"
   },
   "http://feeds.feedburner.com/acs/jafcau": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
@@ -295,7 +295,7 @@
   },
   "http://finance.ifeng.com/rss/stocknews.xml": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
@@ -307,13 +307,13 @@
   },
   "http://www.sciencedaily.com/rss/health_medicine/obesity.xml": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "http://www.sciencedaily.com/rss/health_medicine/nutrition.xml": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
@@ -325,7 +325,7 @@
   },
   "http://www.tandfonline.com/action/showFeed?type=etoc&feed=rss&jc=bfsn20": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
@@ -343,25 +343,25 @@
   },
   "https://resource.innovadatabase.com/rss/nhnews.xml": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "https://decohack.com/feed/": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "http://news.foodmate.net/feed/rss.php?mid=21": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "http://feeds2.feedburner.com/cnbeta-full": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
@@ -373,49 +373,49 @@
   },
   "http://www.tmtpost.com/feed": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "http://cn.nytimes.com/rss/news.xml": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "http://onlinelibrary.wiley.com/rss/journal/10.1002/(ISSN)2048-7177": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "http://onlinelibrary.wiley.com/rss/journal/10.1111/(ISSN)1750-3841": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "http://onlinelibrary.wiley.com/rss/journal/10.1002/(ISSN)1613-4133": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "http://onlinelibrary.wiley.com/rss/journal/10.1002/(ISSN)1930-739X": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "http://onlinelibrary.wiley.com/rss/journal/10.1111/(ISSN)1365-2621": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "http://onlinelibrary.wiley.com/rss/journal/10.1111/(ISSN)1365-277X": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
@@ -427,7 +427,7 @@
   },
   "http://onlinelibrary.wiley.com/rss/journal/10.1111/(ISSN)1745-4565": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
@@ -439,31 +439,31 @@
   },
   "http://cn.technode.com/feed/": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "http://news.foodmate.net/feed/rss.php?mid=107": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "http://www.ifanr.com/feed": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "http://www.mdpi.com/rss/journal/nutrients": {
     "failures": 1,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "http://feeds.rsc.org/rss/FO": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
@@ -475,7 +475,7 @@
   },
   "http://onlinelibrary.wiley.com/rss/journal/10.1111/(ISSN)1747-0080": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
@@ -487,31 +487,31 @@
   },
   "http://www.leiphone.com/feed": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "http://www.precisionnutrition.com/feed": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "http://feeds.nature.com/ejcn/rss/current": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "http://www2c.cdc.gov/podcasts/createrss.asp?c=146": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "http://feeds.geekpark.net/": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
@@ -535,79 +535,79 @@
   },
   "http://www.efsa.europa.eu/en/all/rss": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "https://meta.appinn.net/latest.rss": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "http://www.jwatch.org/nutrition-obesity/rss": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "http://www.clinicalnutritionjournal.com/current.rss": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "http://www.nutritionj.com/latest/rss": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "http://www.hsph.harvard.edu/nutritionsource/feed/": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "http://www.nature.com/ijo/journal/vaop/ncurrent/rss.rdf": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "http://www.ijbnpa.org/latest/rss": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "http://www.dmsjournal.com/latest/rss": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "http://nutritionfacts.org/feed/": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "https://www.naturalproductsinsider.com/rss.xml": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "http://www.nutritionandmetabolism.com/latest/rss": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "http://www.lipidworld.com/latest/rss": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
@@ -625,37 +625,37 @@
   },
   "http://www.thinkingnutrition.com.au/feeds/posts/default": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "http://feeds.nature.com/nutd/rss/current": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "http://link.springer.com/search.rss?facet-content-type=Article&facet-journal-id=421&channel-name=European+Journal+of+Applied+Physiology": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "https://nutrition.org/feed/": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "https://www.cambridge.org/core/rss/product/id/83A36942CB5E029980E32DC6A8BF3C92": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
   "https://www.cambridge.org/core/rss/product/id/D6F69FEC7A749C38806D291D4ADA568B": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
@@ -667,7 +667,7 @@
   },
   "http://www.gutmicrobiotaforhealth.com/feed": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
@@ -679,7 +679,7 @@
   },
   "http://www.adajournal.org/current.rss": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   },
@@ -691,7 +691,7 @@
   },
   "https://rss.huxiu.com/": {
     "failures": 0,
-    "last_check": "2025-07-27T14:14:25.785669+00:00",
+    "last_check": "2025-07-27T14:23:14.039907+00:00",
     "disabled": false,
     "last_disabled_time": null
   }
