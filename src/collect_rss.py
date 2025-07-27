@@ -7,7 +7,6 @@ import time
 import logging
 import asyncio
 import aiohttp
-import requests
 import calendar
 from datetime import datetime, timedelta, timezone
 from diskcache import Cache
@@ -167,21 +166,32 @@ async def process_rss_source(source, health_check_enabled, health_config, health
                 }
                 return news_list, invalid_source, source_status
 
+        # 计算7天前的日期，用于过滤过期新闻
+        seven_days_ago = current_time - timedelta(days=7)
+        
         for entry in feed.entries:
-            # 解析发布日期，不再过滤时间
+            # 解析发布日期
             published_date = None
-            if 'published_parsed' in entry:
+            published_datetime = None
+            if 'published_parsed' in entry and entry.published_parsed:
                 try:
-                    # 将published_parsed（UTC时间）转换为UTC日期
-                    published_utc = datetime.fromtimestamp(calendar.timegm(entry.published_parsed), timezone.utc)
-                    published_date = published_utc.date()
+                    # 将published_parsed（UTC时间）转换为UTC日期时间
+                    published_datetime = datetime.fromtimestamp(calendar.timegm(entry.published_parsed), timezone.utc)
+                    published_date = published_datetime.date()
                 except Exception as e:
                     logging.warning(f"解析日期失败: {str(e)}, 条目: {entry.get('title', '未知标题')}")
                     # 即使日期解析失败也保留新闻，使用当前时间
-                    published_date = datetime.now(timezone.utc).date()
+                    published_datetime = datetime.now(timezone.utc)
+                    published_date = published_datetime.date()
             else:
                 # 没有发布日期的条目也保留，使用当前时间
-                published_date = datetime.now(timezone.utc).date()
+                published_datetime = datetime.now(timezone.utc)
+                published_date = published_datetime.date()
+
+            # 只保留最近7天的新闻
+            if published_datetime < seven_days_ago:
+                logging.debug(f"跳过过期新闻: {entry.get('title', '未知标题')}, 发布时间: {published_datetime}")
+                continue
 
             news_item = {
                 'title': entry.get('title', ''),
@@ -245,7 +255,7 @@ async def collect_rss_feeds():
     auto_disable = health_config.get('auto_disable', True)
     
     all_news = []
-    current_time = datetime.now()
+    current_time = datetime.now(timezone.utc)  # 使用UTC时间进行统一处理
     
     # 创建任务列表
     tasks = []
@@ -256,17 +266,21 @@ async def collect_rss_feeds():
         tasks.append(task)
 
     # 并发执行所有任务
-    results = await asyncio.gather(*tasks)
+    results = await asyncio.gather(*tasks, return_exceptions=True)
 
     # 处理结果
-    for news_items, invalid_source, source_status in results:
+    for result in results:
+        # 处理异常情况
+        if isinstance(result, Exception):
+            logging.error(f"处理RSS源时发生异常: {str(result)}")
+            continue
+            
+        news_items, invalid_source, source_status = result
         all_news.extend(news_items)
         if invalid_source:
             invalid_sources.append(invalid_source)
         if source_status and health_check_enabled:
-            url = invalid_source.get('url') if invalid_source else None
-            if url:
-                health_status[url] = source_status
+            # 注意：这里不需要再次更新health_status[url]，因为已经在process_rss_source中处理了
     
     # 保存健康状态
     if health_check_enabled:
@@ -279,7 +293,6 @@ async def collect_rss_feeds():
     logging.info(f"总共收集到 {len(all_news)} 条新闻")
     return all_news
 
-import traceback
 def main():
     """主函数"""
     print("开始收集RSS内容...")
@@ -288,6 +301,7 @@ def main():
         news_data = asyncio.run(collect_rss_feeds())
     except Exception as e:
         print(f"收集RSS时发生异常: {str(e)}")
+        import traceback
         traceback.print_exc()
         sys.exit(1)
     if news_data:
@@ -302,26 +316,6 @@ def main():
         # 即使没有新闻也保存空文件
         save_json_data([], 'output/raw_news.json')
         print("未收集到任何新闻")
-        sys.exit(0)
 
 if __name__ == "__main__":
     main()
-
-try:
-    import feedparser
-    logger.info('feedparser模块导入成功')
-except ImportError as e:
-    logger.error('无法导入feedparser模块: %s', str(e))
-    raise
-
-async def fetch_rss_feed(session, url):
-    try:
-        async with session.get(url, timeout=10) as response:
-            if response.status != 200:
-                logger.error('RSS请求失败: %s, 状态码: %d', url, response.status)
-                return None
-            content = await response.text()
-            return content
-    except Exception as e:
-        logger.error('获取RSS内容失败: %s, 错误: %s', url, str(e))
-        return None

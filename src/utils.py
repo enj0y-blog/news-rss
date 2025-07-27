@@ -118,12 +118,14 @@ def filter_by_keywords(news_list, keywords, exclude_keywords=None):
     for news in news_list:
         title = news.get('title', '')
         description = news.get('description', '')
-        content = title
-        # 检查是否包含关键词
-        if contains_keywords(content, keywords):
+        content = news.get('content', '')
+        
+        # 检查是否包含关键词 (检查标题、描述和内容)
+        if contains_keywords(title, keywords) or contains_keywords(description, keywords) or contains_keywords(content, keywords):
             # 检查是否包含排除关键词
-            if exclude_keywords and contains_keywords(content, exclude_keywords):
-                continue
+            if exclude_keywords:
+                if contains_keywords(title, exclude_keywords) or contains_keywords(description, exclude_keywords) or contains_keywords(content, exclude_keywords):
+                    continue
             filtered.append(news)
     return filtered
 
