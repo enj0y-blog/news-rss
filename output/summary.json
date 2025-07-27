@@ -1,40 +1,7 @@
 {
-  "total_news": 200,
+  "total_news": 5,
   "sources": [
-    "观察者网",
-    "钛媒体",
-    "艾瑞资讯",
-    "Nutrition Research News",
-    "食品资讯",
-    "Nutrition & Diabetes",
-    "PubMed Trending",
-    "British Journal of Nutrition",
-    "极客公园",
-    "Nutrition Journal",
-    "Nutrition Research Reviews",
-    "199IT",
-    "Lipids in Health and Disease",
-    "Nutrition Insight",
-    "Solidot",
-    "cnBeta全文版",
-    "Obesity News",
-    "爱范儿",
-    "Journal of the Academy of Nutrition and Dietetics",
-    "36氪",
-    "NEJM Journal Watch: Nutrition Obesity",
-    "IT之家",
-    "雷峰网",
-    "European Journal of Applied Physiology",
-    "动点科技",
-    "Nutrition & Metabolism",
-    "Diabetology & Metabolic Syndrome",
-    "European Journal of Clinical Nutrition",
-    "RSC - Food Funct.",
-    "Clinical Nutrition",
-    "tandf: Critical Reviews in Food Science and Nutrition",
-    "异次元软件世界",
-    "NutritionFacts.org",
-    "纽约时报中文网"
+    "财联社电报"
   ],
-  "generated_at": "2025-07-27 06:31:27"
+  "generated_at": "2025-07-27 06:45:27"
 }
