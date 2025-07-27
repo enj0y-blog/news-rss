@@ -39,7 +39,7 @@ def main():
     # 创建输出目录
     os.makedirs('output', exist_ok=True)
     
-    # 收集RSS内容
+    # 收集RSS内容 (异步执行)
     if not run_command("python src/collect_rss.py", "收集RSS内容"):
         sys.exit(1)
     

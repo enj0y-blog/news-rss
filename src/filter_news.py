@@ -55,8 +55,8 @@ def main():
             # 生成摘要报告
             summary = {
                 'total_news': len(filtered_data),
-                'sources': list(set(item['source'] for item in filtered_data)),
-                'generated_at': filtered_data[0]['collected_at'] if filtered_data else None
+                'sources': list(set(item.get('source', '未知来源') for item in filtered_data)),
+                'generated_at': filtered_data[0].get('collected_at') if filtered_data else None
             }
             summary_file = 'output/summary.json'
             if save_json_data(summary, summary_file):

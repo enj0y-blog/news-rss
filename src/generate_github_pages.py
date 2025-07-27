@@ -113,19 +113,19 @@ def clean_html(text: str) -> str:
 def generate_html(news_data: List[Dict[str, Any]], keywords: List[str]) -> str:
     """Generate HTML content for GitHub Pages"""
     keyword_groups = group_news_by_keywords(news_data, keywords)
-    html_content = f"""<!DOCTYPE html>
+    html_content = """<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>科技新闻聚合 - RSS精选</title>
     <style>
-        * {{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }}
-        body {{
+        }
+        body {
             font-family: -apple-system, BlinkMacSystemFont, 
                         'Segoe UI', 'PingFang SC', 
                         'Hiragino Sans GB', 'Microsoft YaHei', 
@@ -133,13 +133,13 @@ def generate_html(news_data: List[Dict[str, Any]], keywords: List[str]) -> str:
             line-height: 1.6;
             color: #333;
             background-color: #f5f5f5;
-        }}
-        .container {{
+        }
+        .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-        }}
-        header {{
+        }
+        header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             padding: 40px 0;
@@ -147,130 +147,177 @@ def generate_html(news_data: List[Dict[str, Any]], keywords: List[str]) -> str:
             margin-bottom: 30px;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }}
-        h1 {{
+        }
+        h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
-        }}
-        .subtitle {{
+        }
+        .subtitle {
             font-size: 1.2em;
             opacity: 0.9;
-        }}
-        .stats {{
+        }
+        .stats {
             display: flex;
             justify-content: center;
             gap: 40px;
             margin-top: 20px;
             flex-wrap: wrap;
-        }}
-        .stat-item {{
+        }
+        .stat-item {
             text-align: center;
-        }}
-        .stat-number {{
+        }
+        .stat-number {
             font-size: 2em;
             font-weight: bold;
             display: block;
-        }}
-        .keyword-section {{
+        }
+        .keyword-section {
             background: white;
             margin-bottom: 30px;
             border-radius: 10px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             overflow: hidden;
-        }}
-        .keyword-header {{
+        }
+        .keyword-header {
             background: #4CAF50;
             color: white;
             padding: 15px 20px;
             font-size: 1.3em;
             font-weight: bold;
-        }}
-        .news-list {{
+        }
+        .news-list {
             padding: 0;
-        }}
-        .news-item {{
+        }
+        .news-item {
             padding: 20px;
             border-bottom: 1px solid #eee;
             transition: background-color 0.3s;
-        }}
-        .news-item:hover {{
+        }
+        .news-item:hover {
             background-color: #f9f9f9;
-        }}
-        .news-item:last-child {{
+        }
+        .news-item:last-child {
             border-bottom: none;
-        }}
-        .news-title {{
+        }
+        .news-title {
             font-size: 1.2em;
             font-weight: bold;
             margin-bottom: 8px;
-        }}
-        .news-title a {{
+        }
+        .news-title a {
             color: #2c3e50;
             text-decoration: none;
-        }}
-        .news-title a:hover {{
+        }
+        .news-title a:hover {
             color: #667eea;
             text-decoration: underline;
-        }}
-        .news-meta {{
+        }
+        .news-meta {
             color: #666;
             font-size: 0.9em;
             margin-bottom: 10px;
-        }}
-        .news-description {{
+        }
+        .news-description {
             color: #555;
             line-height: 1.5;
             margin-bottom: 10px;
-        }}
-        .news-tags {{
+        }
+        .news-tags {
             display: flex;
             gap: 8px;
             flex-wrap: wrap;
-        }}
-        .tag {{
+        }
+        .tag {
             background: #e3f2fd;
             color: #1976d2;
             padding: 4px 8px;
             border-radius: 12px;
             font-size: 0.8em;
-        }}
-        .source-tag {{
+        }
+        .source-tag {
             background: #fff3e0;
             color: #f57c00;
-        }}
-        .category-tag {{
+        }
+        .category-tag {
             background: #e8f5e8;
             color: #388e3c;
-        }}
-        .footer {{
+        }
+        .footer {
             text-align: center;
             padding: 40px 0;
             color: #666;
             border-top: 1px solid #ddd;
             margin-top: 40px;
-        }}
-        .update-time {{
+        }
+        .update-time {
             background: white;
             padding: 15px;
             border-radius: 10px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             text-align: center;
             margin-bottom: 20px;
-        }}
-        @media (max-width: 768px) {{
-            .container {{
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 5px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .subtitle {
+                font-size: 1em;
+            }
+            .stats {
+                gap: 15px;
+                flex-direction: column;
+                align-items: center;
+            }
+            .stat-item {
+                margin-bottom: 10px;
+                width: 100%;
+                background: #f5f5f5;
                 padding: 10px;
-            }}
-            h1 {{
-                font-size: 2em;
-            }}
-            .stats {{
-                gap: 20px;
-            }}
-            .news-item {{
-                padding: 15px;
-            }}
-        }}
+                border-radius: 8px;
+            }
+            .stat-number {
+                font-size: 1.5em;
+            }
+            .keyword-header {
+                padding: 12px 15px;
+                font-size: 1.1em;
+            }
+            .news-item {
+                padding: 12px;
+            }
+            .news-title {
+                font-size: 1.1em;
+            }
+            .news-description {
+                font-size: 0.9em;
+            }
+            .news-tags {
+                flex-wrap: wrap;
+                gap: 5px;
+            }
+            .tag {
+                padding: 3px 6px;
+                font-size: 0.75em;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            .news-title {
+                font-size: 1em;
+            }
+            .news-meta {
+                font-size: 0.8em;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -280,21 +327,21 @@ def generate_html(news_data: List[Dict[str, Any]], keywords: List[str]) -> str:
             <p class="subtitle">基于关键词的智能新闻筛选与聚合</p>
             <div class="stats">
                 <div class="stat-item">
-                    <span class="stat-number">{len(news_data)}</span>
+                    <span class="stat-number">""" + str(len(news_data)) + """</span>
                     <span>篇精选文章</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number">{len(keyword_groups)}</span>
+                    <span class="stat-number">""" + str(len(keyword_groups)) + """</span>
                     <span>个关键词</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number">{len(set([news.get('source', 'Unknown') for news in news_data]))}</span>
+                    <span class="stat-number">""" + str(len(set([news.get('source', 'Unknown') for news in news_data]))) + """</span>
                     <span>个来源</span>
                 </div>
             </div>
         </header>
         <div class="update-time">
-            <strong>最后更新：</strong>{datetime.now().strftime('%Y-%m-%d %H:%M:%S')} (UTC+8)
+            <strong>最后更新：</strong>""" + datetime.now().strftime('%Y-%m-%d %H:%M:%S') + """ (UTC+8)
         </div>
 """
     # Add keyword sections
