@@ -8,7 +8,8 @@ import logging
 import asyncio
 import aiohttp
 import requests
-from datetime import datetime, timedelta
+import calendar
+from datetime import datetime, timedelta, timezone
 from diskcache import Cache
 from utils import load_config, save_json_data, format_datetime
 
@@ -157,10 +158,10 @@ async def process_rss_source(source, health_check_enabled, health_config, health
             if 'published_parsed' in entry:
                 try:
                     # 将published_parsed（UTC时间）转换为UTC日期
-                    published_utc = datetime.fromtimestamp(time.mktime(entry.published_parsed), datetime.timezone.utc)
+                    published_utc = datetime.fromtimestamp(calendar.timegm(entry.published_parsed), timezone.utc)
                     published_date = published_utc.date()
                     # 获取当前UTC日期
-                    current_date = datetime.now(datetime.timezone.utc).date()
+                    current_date = datetime.now(timezone.utc).date()
                     
                     # 只保留今天的新闻
                     if published_date != current_date:
