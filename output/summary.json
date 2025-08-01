@@ -1,22 +1,20 @@
 {
-  "total_news": 135,
+  "total_news": 114,
   "sources": [
-    "Wiley: Obesity",
-    "纽约时报中文网",
-    "动点科技",
-    "Nutrition Research News",
-    "Wiley: Journal of Food Science",
-    "36氪",
-    "艾瑞资讯",
-    "小众软件论坛",
-    "钛媒体",
-    "食品资讯",
-    "虎嗅网",
-    "Journal of Human Nutrition and Dietetics",
     "cnBeta全文版",
+    "食品资讯",
     "开源中国",
+    "Journal of Human Nutrition and Dietetics",
+    "钛媒体",
+    "36氪",
+    "动点科技",
     "IT之家",
-    "Wiley: Food Science & Nutrition"
+    "Wiley: Obesity",
+    "艾瑞资讯",
+    "Wiley: Food Science & Nutrition",
+    "虎嗅网",
+    "小众软件论坛",
+    "Wiley: Journal of Food Science"
   ],
-  "generated_at": "2025-08-01 02:03:27"
+  "generated_at": "2025-08-01 04:54:27"
 }
