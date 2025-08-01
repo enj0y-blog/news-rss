@@ -1,19 +1,16 @@
 {
-  "total_news": 101,
+  "total_news": 63,
   "sources": [
-    "Wiley: Food Science & Nutrition",
-    "Wiley: Journal of Food Science",
+    "IT之家",
+    "艾瑞资讯",
     "虎嗅网",
     "食品资讯",
-    "cnBeta全文版",
-    "艾瑞资讯",
-    "Wiley: Obesity",
-    "钛媒体",
-    "IT之家",
-    "开源中国",
-    "动点科技",
     "36氪",
-    "小众软件论坛"
+    "Wiley: Food Science & Nutrition",
+    "Wiley: Journal of Food Science",
+    "开源中国",
+    "钛媒体",
+    "Wiley: Obesity"
   ],
-  "generated_at": "2025-08-01 06:35:07"
+  "generated_at": "2025-08-01 08:30:40"
 }
